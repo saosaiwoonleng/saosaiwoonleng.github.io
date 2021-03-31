@@ -1,0 +1,55 @@
+// utilities
+var get = function (selector, scope) {
+  scope = scope ? scope : document;
+  return scope.querySelector(selector);
+};
+
+var getAll = function (selector, scope) {
+  scope = scope ? scope : document;
+  return scope.querySelectorAll(selector);
+};
+
+jQuery(document).ready(function ($) {
+
+    $triggered_times = 0;
+
+    $(window).on('scroll', function () {
+
+        var y_scroll_pos = window.pageYOffset;
+        var scroll_pos_test = 20;   // set to whatever you want it to be
+
+        if (y_scroll_pos > scroll_pos_test && $triggered_times == 0) {
+
+
+
+// setup typewriter effect in the terminal demo
+if (document.getElementsByClassName('demo').length > 0) {
+  var i = 0;
+    var txt = `
+    Freelance IT Engineer with internship experience at SSMC, currently developing 
+    my portfolio website 💻 and building Gaming PCs 🎮. 
+
+    ✔️ Accomplished 4 Web Applications 💻 and 3 Electronic Projects 🤖.
+    `;
+  var speed = 60;
+
+  function typeItOut () {
+    if (i < txt.length) {
+      document.getElementsByClassName('demo')[0].innerHTML += txt.charAt(i);
+      i++;
+      setTimeout(typeItOut, speed);
+    }
+  }
+
+  setTimeout(typeItOut, 1800);
+}
+
+
+
+
+            $triggered_times = 1;   // to make sure the above action triggers only once
+
+        }
+    });
+
+})
