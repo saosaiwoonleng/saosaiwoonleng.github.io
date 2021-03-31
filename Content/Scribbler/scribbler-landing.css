@@ -30,12 +30,12 @@
 
 .hero__terminal pre {
   white-space: pre-line;
-  background: #222222;
+  background-color: #222222;
   padding-top: 1rem;
 }
 
 .shell-session {
-  background: #222222;
+  background-color: #222222;
   font-size: 2.4rem;
   line-height: 1.25;
 }
