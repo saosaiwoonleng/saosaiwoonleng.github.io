@@ -6,6 +6,14 @@
     "configurations": [
         
         {
+            "name": "Launch Edge",
+            "request": "launch",
+            "type": "pwa-msedge",
+            "url": "file:///C:/Users/Reo/source/repos/saosaiwoonleng.github.io/saosaiwoonleng.github.io/index.html",
+            "webRoot": "${workspaceFolder}"
+        },
+        
+        {
             "type": "pwa-chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
