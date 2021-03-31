@@ -92,7 +92,7 @@ body {
  * ------------------------------------------------------------------- */
 
 a {
-    color: #2e5cff /*#862121*/ /*sswl*/
+    color: #2e5cff; /*#862121*/ /*sswl*/
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }

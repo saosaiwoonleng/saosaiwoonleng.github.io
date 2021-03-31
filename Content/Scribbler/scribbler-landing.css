@@ -4,7 +4,7 @@
 /* hero section */
 .hero {
   text-align: center;
-  background-color: var(--bg-color);
+  background-color: #232323;
   padding: 2rem 0 2rem 0;
 }
 
@@ -19,13 +19,10 @@
 
 .hero__terminal {
   min-width: 100%;
-  margin: 2rem auto 3rem auto;
   text-align: left;
-  font-size: 2.4rem;
   color: white;
-  padding: 1rem 0;
   border-radius: 4px;
-  background-color: #232323;
+  background-color: #222222;
   min-height: 285px;
   animation: fadeUp 2s;
   box-shadow: 0px 12px 36.8px 9.2px rgba(0, 0, 0, 0.1);
@@ -33,7 +30,14 @@
 
 .hero__terminal pre {
   white-space: pre-line;
+  background-color: #222222;
   padding-top: 1rem;
+}
+
+.shell-session {
+  background-color: #222222;
+  font-size: 2.4rem;
+  line-height: 1.25;
 }
 
 @media (max-width: 750px) {
