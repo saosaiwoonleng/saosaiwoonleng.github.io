@@ -26,10 +26,10 @@ jQuery(document).ready(function ($) {
 if (document.getElementsByClassName('demo').length > 0) {
   var i = 0;
     var txt = `
-    Freelance IT Engineer with internship experience at SSMC, currently developing 
-    my portfolio website 💻 and building Gaming PCs 🎮. 
+Freelance IT Engineer with internship experience at SSMC, currently developing 
+my portfolio website 💻 and building Gaming PCs 🎮. 
 
-    ✔️ Accomplished 4 Web Applications 💻 and 3 Electronic Projects 🤖.
+✔️ Accomplished 4 Web Applications 💻 and 3 Electronic Projects 🤖.
     `;
   var speed = 60;
 
