@@ -1768,7 +1768,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 .home-content h3 {
     font-family: "montserrat-bold", sans-serif;
-    font-size: 1.8rem;
+    font-size: 3.5rem;
     color: #2e5cff;
     text-transform: uppercase;
     letter-spacing: .5rem;
@@ -2109,7 +2109,7 @@ html.no-csstransitions .home-content__main {
 
 @media only screen and (max-width: 800px) {
     .home-content h3 {
-        font-size: 1.6rem;
+        font-size: 2.2rem;
         padding-left: 50px;
         margin-left: -10px;
     }
@@ -2151,7 +2151,7 @@ html.no-csstransitions .home-content__main {
         min-height: 654px;
     }
     .home-content h3 {
-        font-size: 1.5rem;
+        font-size: 2.2rem;
     }
     .home-content h1 {
         font-size: 3.8rem;
