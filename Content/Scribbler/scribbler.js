@@ -43,10 +43,6 @@ my portfolio website 💻 and building Gaming PCs 🎮.
 
   setTimeout(typeItOut, 1800);
 }
-
-
-
-
             $triggered_times = 1;   // to make sure the above action triggers only once
 
         }
