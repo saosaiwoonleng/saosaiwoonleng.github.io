@@ -2229,9 +2229,6 @@ html.no-csstransitions .home-content__main {
         padding-right: 40px;
     }
 
-    .skills-content .right {
-        padding-left: 40px;
-    }
 
 /* ===================================================================
  * # experiences - (_site-layout.scss)  sswl
@@ -2253,9 +2250,6 @@ html.no-csstransitions .home-content__main {
         padding-right: 40px;
     }
 
-    .experiences-content .right {
-        padding-left: 40px;
-    }
 
 
 
