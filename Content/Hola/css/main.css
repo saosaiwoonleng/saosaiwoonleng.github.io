@@ -2191,8 +2191,8 @@ html.no-csstransitions .home-content__main {
  * ------------------------------------------------------------------- */
 
 .s-about {
-    padding-top: 15rem;
-    padding-bottom: 5rem;
+    padding-top: 10rem;
+    padding-bottom: 0rem;
     background-color: #FFFFFF;
     position: relative;
 }
@@ -2216,13 +2216,13 @@ html.no-csstransitions .home-content__main {
 
 .s-skills {
     padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-bottom: 0rem;
     background-color: #FFFFFF;
     position: relative;
 }
 
 .skills-content {
-    margin-bottom: 3rem;
+    margin-bottom: 0rem;
 }
 
     .skills-content .left {
@@ -2392,8 +2392,8 @@ html.no-csstransitions .home-content__main {
  * ------------------------------------------------------------------- */
 
 .s-works {
-    padding-top: 15rem;
-    padding-bottom: 15.6rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
     background-color: #f1f1f1;
     position: relative;
 }
