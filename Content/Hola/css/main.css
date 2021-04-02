@@ -1115,7 +1115,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     position: absolute;
     left: 0;
     top: -3rem;
-    font-family: "montserrat-extrabold", sans-serif;
+    font-family: "librebaskerville-regular", sans-serif;
+    font-weight: bold;
     color: #0D0A0B;
     text-transform: uppercase;
     letter-spacing: .2rem;
@@ -3343,7 +3344,7 @@ html.no-csstransitions .home-content__main {
 footer {
     font-family: "montserrat-regular", sans-serif;
     font-size: 14px;
-    padding: 6.6rem 0 4.2rem;
+    padding: 0rem 0 4.2rem;
     text-align: center;
     color: rgba(255, 255, 255, 0.2);
 }
@@ -3418,7 +3419,7 @@ footer a:hover, footer a:focus {
 }
 
 .footer-bottom {
-    margin-top: 7.2rem;
+    margin-top: 0rem;
     text-align: center;
 }
 

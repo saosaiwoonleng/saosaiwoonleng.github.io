@@ -50,8 +50,11 @@
 
     <!-- WordAnimation
     ================================================== -->
-    <link rel="stylesheet" href="Content/WordAnimation/flip.css">
+    <link rel="stylesheet" href="Content/WordAnimation/flip-shake.css">
     <script src="Content/WordAnimation/chaffle.min.js"></script>
+    <link rel="stylesheet" href="Content/WordAnimation/movingletter.css">
+    <script src="Content/WordAnimation/movingletter.min.js"></script>
+
 
 
 </head>
@@ -94,7 +97,7 @@
             <div class="row home-content__main">
 
                 <h3>
-                    <div class="wordCarousel">
+                    <div class="flipletter">
                         <ul class="flip2">
                             <li>Welcome !</li>
                             <li>Hello There</li>
@@ -103,11 +106,13 @@
                 </h3>
 
                 <h1>
-                    <div class="">
-                        I am Sao Sai Woon Leng, <br>
-                        IT Engineer from <br>
-                        Singapore ;)
+                    
+                    I am Sao Sai Woon Leng, <br>
+                    <div class="movingletter2">
+                    IT Engineer from 
+                    Singapore ;)
                     </div>
+                    
                 </h1>
 
                 <div class="home-content__buttons">
@@ -698,7 +703,7 @@
 
         <div class="row testimonials-header">
             <div class="col-full">
-                <h1 data-chaffle="en" class="h02">What People Say</h1>
+                <h1 class="shakeletter">What People Say</h1>
             </div>
         </div>
 
@@ -735,7 +740,7 @@
                     </p>
                     <div class="testimonials__author h06">
                         Harold Abelson
-                        <span>Engineer</span>
+                        <span>Professor from MIT</span>
                     </div>
                 </div>
 
@@ -747,6 +752,39 @@
                     <div class="testimonials__author h06">
                         Nelson Mandela
                         <span>Former President of South Africa</span>
+                    </div>
+                </div>
+
+                <div class="testimonials__slide">
+                    <img src="Content/Hola/images/avatars/user-05.jpg" alt="Author image" class="testimonials__avatar">
+                    <p>
+                        Anything is possible if you have got enough nerve.
+                    </p>
+                    <div class="testimonials__author h06">
+                        J.K. Rowling
+                        <span>British Author</span>
+                    </div>
+                </div>
+
+                <div class="testimonials__slide">
+                    <img src="Content/Hola/images/avatars/user-06.png" alt="Author image" class="testimonials__avatar">
+                    <p>
+                        Don't forget to smile in any situation. As long as you are alive, there will be better things later, and there will be many.
+                    </p>
+                    <div class="testimonials__author h06">
+                        Eiichiro Oda
+                        <span>Japanese Manga Artist</span>
+                    </div>
+                </div>
+
+                <div class="testimonials__slide">
+                    <img src="Content/Hola/images/avatars/user-07.jpg" alt="Author image" class="testimonials__avatar">
+                    <p>
+                        Life's most persistent and urgent question is, 'What are you doing for others?'
+                    </p>
+                    <div class="testimonials__author h06">
+                        Martin Luther King, Jr.
+                        <span>American Minister</span>
                     </div>
                 </div>
 
@@ -764,7 +802,12 @@
         <div class="row narrow section-intro">
             <div class="col-full">
                 <h3>Contact</h3>
-                <h1 data-chaffle="en">Say Hello</h1>
+                <h1 class="movingletter11">
+                    <span class="text-wrapper">
+                      <span class="line line1"></span>
+                      <span class="letters">Say Hello</span>
+                    </span>
+                </h1>
 
                 <p class="lead"></p>
             </div>
@@ -842,10 +885,6 @@
     <footer>
         <div class="row">
             <div class="col-full">
-
-                <div class="footer-logo">
-                    <a class="footer-site-logo" href="#0"><img src="Content/Hola/images/logo.png" alt="Homepage"></a>
-                </div>
 
                 <ul class="footer-social">
                     <li>
@@ -946,17 +985,16 @@
     <script src="Content/Hola/js/plugins.js"></script>
     <script src="Content/Hola/js/main.js"></script>
 
+    <!-- Scribbler
+    ================================================== -->
+    <script src="Content/Scribbler/scribbler.js"></script>
+
+    <!-- WordAnimation
+    ================================================== -->
+    <script src="Content/WordAnimation/data-chaffle.js"></script>
+    <script src="Content/WordAnimation/movingletter.js"></script>
 
 
 </body>
 
-<!-- Scribbler
-    ================================================== -->
-    <script src="Content/Scribbler/scribbler.js"></script>
-
-<!-- WordAnimation
-    ================================================== -->
-    <script src="Content/WordAnimation/data-chaffle.js"></script>
-
 </html>
-
