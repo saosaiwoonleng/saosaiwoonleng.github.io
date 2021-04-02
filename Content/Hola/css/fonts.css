@@ -5,26 +5,26 @@
 
 
 /*
- * libre baskerville
+ * librebaskerville  ->  nunito
 ================================================================================ */
 
 @font-face {
     font-family: "librebaskerville-regular";
-    src: url("../fonts/librebaskerville/librebaskerville-regular-webfont.woff2") format("woff2"), url("../fonts/librebaskerville/librebaskerville-regular-webfont.woff") format("woff");
+    src: url("../fonts/nunito/Nunito-Regular.ttf");
     font-style: normal;
     font-weight: normal;
 }
 
 @font-face {
     font-family: "librebaskerville-italic";
-    src: url("../fonts/librebaskerville/librebaskerville-italic-webfont.woff2") format("woff2"), url("../fonts/librebaskerville/librebaskerville-italic-webfont.woff") format("woff");
+    src: url("../fonts/nunito/Nunito-Italic.ttf");
     font-style: normal;
     font-weight: normal;
 }
 
 @font-face {
     font-family: "librebaskerville-bold";
-    src: url("../fonts/librebaskerville/librebaskerville-bold-webfont.woff2") format("woff2"), url("../fonts/librebaskerville/librebaskerville-bold-webfont.woff") format("woff");
+    src: url("../fonts/nunito/Nunito-Bold.ttf");
     font-style: normal;
     font-weight: normal;
 }
