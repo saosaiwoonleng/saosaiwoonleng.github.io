@@ -349,29 +349,22 @@
                 $.ajax({
     
                     type: "POST",
-                    url: "inc/sendEmail.php",
+                    url: "https://formspree.io/f/mvodoovb",
                     data: $(form).serialize(),
                     beforeSend: function() { 
     
                         sLoader.slideDown("slow");
     
                     },
-                    success: function(msg) {
-    
+                    dataType:"json",
+                    success: function() {
+
                         // Message was sent
-                        if (msg == 'OK') {
-                            sLoader.slideUp("slow"); 
-                            $('.message-warning').fadeOut();
-                            $('#contactForm').fadeOut();
-                            $('.message-success').fadeIn();
-                        }
-                        // There was an error
-                        else {
-                            sLoader.slideUp("slow"); 
-                            $('.message-warning').html(msg);
-                            $('.message-warning').slideDown("slow");
-                        }
-    
+                        sLoader.slideUp("slow"); 
+                        $('.message-warning').fadeOut();
+                        $('#contactForm').fadeOut();
+                        $('.message-success').fadeIn();
+                    
                     },
                     error: function() {
     
