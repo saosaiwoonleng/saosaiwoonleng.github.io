@@ -1,12 +1,9 @@
 ﻿.chartcontainer {
-    width: 100%;
-    max-width: 1024px;
-    display: grid;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
 }
 
-@media only screen and (min-width: 1250px) {
-    .chartcontainer { grid-template-columns: repeat(2, 1fr); }
-  }
 
 .chart {
     position: relative;

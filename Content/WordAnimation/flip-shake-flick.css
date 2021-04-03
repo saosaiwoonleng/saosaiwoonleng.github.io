@@ -26,7 +26,7 @@
 
 
 
-.shakeletter {
+.shakeletter:hover {
     display: inline-block;
     background-size: 120% 100%;
     -webkit-background-clip: text;
@@ -47,3 +47,27 @@
     20% { transform: skewX(0deg); }
     100% { transform: skewX(0deg); }  
   }
+
+
+
+
+
+
+
+
+  .flickletter:hover {
+    text-shadow: 0.06rem 0 0.06rem #ea36af, -0.125rem 0 0.06rem #75fa69;
+    animation-duration: 0.01s;
+    animation-name: textflicker;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes textflicker {
+from {
+ text-shadow: 2px 0 0 #ea36af, -3px 0 0 #75fa69;
+}
+to {
+ text-shadow: 3px 0.5px 2px #ea36af, -2px -0.5px 2px #75fa69;
+}
+}

@@ -676,7 +676,7 @@ textarea, select {
 }
 
 textarea {
-    min-height: 25rem;
+    min-height: 19rem;
 }
 
 input[type="email"]:focus, 
@@ -2230,6 +2230,10 @@ html.no-csstransitions .home-content__main {
         padding-right: 40px;
     }
 
+    .skills-content .right {
+        padding-left: 40px;
+    }
+
 
 /* ===================================================================
  * # experiences - (_site-layout.scss)  sswl
@@ -2250,6 +2254,11 @@ html.no-csstransitions .home-content__main {
     .experiences-content .left {
         padding-right: 40px;
     }
+
+    .experiences-content .right {
+        padding-left: 40px;
+    }
+
 
 
 
@@ -2709,7 +2718,7 @@ html.no-csstransitions .home-content__main {
     border-radius: 100%;
     padding-right: 0;
     padding-left: 0;
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: rgba(200, 200, 200, 0.15);
     border: none;
     box-shadow: 0 0 0 5px rgba(255, 255, 255, 0);
     cursor: pointer;
