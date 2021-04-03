@@ -109,6 +109,12 @@
 
 
 
+  .chart[data-percent='95'] .outer {
+    stroke-dashoffset: 27;
+    -webkit-animation: show95 2s;
+    animation: show95 2s;
+}
+
   .chart[data-percent='90'] .outer {
     stroke-dashoffset: 53;
     -webkit-animation: show90 2s;
@@ -224,6 +230,25 @@
 
 /* END Keyframes for the initial animation */
 
+@-webkit-keyframes show95 {
+  from {
+      stroke-dashoffset: 537;
+  }
+
+  to {
+      stroke-dashoffset: 27;
+  }
+}
+
+@keyframes show95 {
+  from {
+      stroke-dashoffset: 537;
+  }
+
+  to {
+      stroke-dashoffset: 27;
+  }
+}
 
 @-webkit-keyframes show90 {
     from {
