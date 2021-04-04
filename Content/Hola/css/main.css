@@ -676,7 +676,7 @@ textarea, select {
 }
 
 textarea {
-    min-height: 19rem;
+    min-height: 16.5rem;
 }
 
 input[type="email"]:focus, 
@@ -3093,7 +3093,7 @@ html.no-csstransitions .home-content__main {
     background-image: url("../images/contact-bg.jpg");
     background-repeat: no-repeat;
     background-position: center, center;
-    padding-top: 13.2rem;
+    padding-top: 10rem;
     padding-bottom: 12rem;
     color: rgba(255, 255, 255, 0.5);
     position: relative;
@@ -4184,5 +4184,17 @@ article.blog-single .blog-content {
     }
     .commentlist .comment__avatar {
         display: none;
+    }
+}
+
+
+/* ------------------------------------------------------------------- 
+ * responsive:
+ * col-six tab-full right
+ * ------------------------------------------------------------------- */
+
+@media only screen and (max-width: 800px) {
+    .col-six.tab-full.right {
+        padding: 40px 40px 0px 15px;
     }
 }
