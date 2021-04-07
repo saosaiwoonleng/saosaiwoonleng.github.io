@@ -2413,6 +2413,15 @@ html.no-csstransitions .home-content__main {
  * ## bricks/masonry - (_site-layout.scss)
  * ------------------------------------------------------------------- */
 
+ .portfoliocontainer {
+    display: inline-block;
+ }
+
+ .masonry__brick {
+    display: inline-block;
+ }
+
+ 
 .masonry-wrap {
     margin-top: 4.8rem;
     max-width: none;
@@ -2440,12 +2449,14 @@ html.no-csstransitions .home-content__main {
 }
 
 .item-folio__thumb img {
+    border-radius: 5px;
     vertical-align: top;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
 }
 
 .item-folio__thumb .shadow-overlay {
+    border-radius: 5px;
     position: absolute;
     top: 0;
     left: 0;
