@@ -73,6 +73,7 @@
     
     /* firefox bug fix - won't rotate at 90deg angles */
     -moz-transform: rotate(-89deg) translateX(-190px);
+    transform: rotate(-89deg) translateX(-190px);
   }
   
   .chart:hover .outer {
