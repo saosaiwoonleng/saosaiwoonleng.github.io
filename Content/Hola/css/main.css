@@ -3472,6 +3472,7 @@ footer a:hover, footer a:focus {
 }
 
 .go-top a, .go-top a:visited {
+    border-radius: 5px;
     text-decoration: none;
     border: 0 none;
     display: block;
