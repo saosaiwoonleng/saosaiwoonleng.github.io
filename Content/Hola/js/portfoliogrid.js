@@ -1,10 +1,10 @@
 $(document).ready(function(){
-    $('#defaultfilterbutton').css('background', '#2e5cff').css('border-color', '#2e5cff');                    //add default filter button color on page loads
+    $('#defaultfilterbuttoncolor').css('background', '#2e5cff').css('border-color', '#2e5cff');                    //add default filter button color on page loads
 
     $(".filter-button").click(function(){
         var value = $(this).attr('data-filter');
 
-        var element = document.getElementById('defaultfilterbutton');                    //remove default filter button color on page loads
+        var element = document.getElementById('defaultfilterbuttoncolor');                    //remove default filter button color after clicked
         element.style.background = null;
         element.style.borderColor = null;
 
