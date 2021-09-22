@@ -4,9 +4,7 @@ $(document).ready(function(){
     $(".filter-button").click(function(){
         var value = $(this).attr('data-filter');
 
-        var element = document.getElementById('defaultfilterbuttoncolor');                    //remove default filter button color after clicked
-        element.style.background = null;
-        element.style.borderColor = null;
+        removeProperty();
 
         if(value == "all")
         {
@@ -29,3 +27,9 @@ $(this).removeClass("active");
 $(this).addClass("active");
 
 });
+
+function removeProperty() {                                                                          //remove default filter button color
+    element = document.getElementById('defaultfilterbuttoncolor').style;
+    element.removeProperty('background');
+    element.removeProperty('border-color');
+}

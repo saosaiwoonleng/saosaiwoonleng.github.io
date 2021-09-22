@@ -28,9 +28,9 @@ if (document.getElementsByClassName('demo').length > 0) {
     var txt = `
 Freelance Software Engineer, currently learning and developing algorithmic trading bot 🤖 and building Gaming PCs 🎮. 
 
-✔️ Accomplished 4 Web Applications 💻 and 3 Electronic Projects 🦾.
+Accomplished 6 Web Applications 💻 and 3 Electronic Projects 🤖 throughout my career 📈.
 `;
-  var speed = 60;
+  var speed = 30;   //60
 
   function typeItOut () {
     if (i < txt.length) {
