@@ -31,13 +31,13 @@ Freelance Software Engineer, currently learning and developing algorithmic tradi
 Accomplished 6 Web Applications 💻 and 3 Electronic Projects 🤖 throughout my career 📈.
 `;
 
-var isTouchDevice = function() {  return 'ontouchstart' in window || 'onmsgesturechange' in window; };
-var isDesktop = window.screenX != 0 && !isTouchDevice() ? true : false;
-if (isDesktop) {
-  var speed = 30;   //60
-}
-else{
+var isMobile = navigator.userAgent.match(/(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i);
+if (isMobile){
+  document.getElementById('blackboard').setAttribute("height", "850px");
   var speed = 1;
+}
+else {
+  var speed = 30;   //60
 }
 
   function typeItOut () {
