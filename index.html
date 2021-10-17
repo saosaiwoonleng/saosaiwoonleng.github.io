@@ -55,7 +55,9 @@
     <link rel="stylesheet" href="Content/WordAnimation/movingletter.css">
     <script src="Content/WordAnimation/movingletter.min.js"></script>
 
-
+    <!-- ScrollReveal
+    ================================================== -->
+    <script src="Content/ScrollReveal/scrollreveal.js"></script>
 
 </head>
 
@@ -263,7 +265,7 @@
 
             <div class="col-six tab-full left">
                 <h1 data-chaffle="en">Employment History</h1><br />
-                <div class="timeline">
+                <div class="timeline" id="timeline_employment">
 
                     <div class="timeline__block">
                         <div class="timeline__bullet"></div>
@@ -305,7 +307,7 @@
 
             <div class="col-six tab-full right">
                 <h1 data-chaffle="en">Educational History</h1><br />
-                <div class="timeline">
+                <div class="timeline" id="timeline_education">
 
                     <div class="timeline__block">
                         <div class="timeline__bullet"></div>
@@ -367,7 +369,7 @@
             </div>
         </div>
 
-        <div style="text-align: center;">
+        <div style="text-align: center;" id="buttoncontainer">
             <button class="btn btn--primary filter-button" data-filter="all" id="defaultfilterbuttoncolor">All</button>
             <button class="btn btn--primary filter-button" data-filter="webapplication">Web Application</button>
             <button class="btn btn--primary filter-button" data-filter="electronicproject">Electronic Project</button>
@@ -978,7 +980,7 @@
 
         <div class="row contact__main">
             <div class="col-eight tab-full contact__form">
-                <form name="contactForm" id="contactForm" method="POST" action="">
+                <form name="contactForm" id="contactForm" method="POST" action="https://formspree.io/f/mvodoovb">
                     <fieldset>
 
                         <div class="form-field">
@@ -1169,6 +1171,10 @@
     <!-- Music
     ================================================== -->
     <!-- <script src="Content/Hola/js/music.js"></script> -->
+
+    <!-- ScrollReveal
+    ================================================== -->
+    <script src="Content/ScrollReveal/scrollreveal_body.js"></script>
 </body>
 
 </html>
