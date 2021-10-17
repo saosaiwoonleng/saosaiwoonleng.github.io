@@ -33,10 +33,12 @@ Accomplished 6 Web Applications 💻 and 3 Electronic Projects 🤖 throughout m
 
 var isMobile = navigator.userAgent.match(/(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i);
 if (isMobile){
-  $('#blackboard').css('height','850px');
+  $('#blackboard').css('height','750px');
+  var speed = 1;   //60
 }
-
-var speed = 30;   //60
+else{
+  var speed = 30;   //60
+}
 
   function typeItOut () {
     if (i < txt.length) {
