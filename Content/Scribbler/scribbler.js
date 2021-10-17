@@ -31,11 +31,11 @@ Freelance Software Engineer, currently learning and developing algorithmic tradi
 Accomplished 6 Web Applications 💻 and 3 Electronic Projects 🤖 throughout my career 📈.
 `;
 
-if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-  var speed = 1;
+if (/Windows|Mac|Linux/i.test(navigator.userAgent)) {
+  var speed = 30;   //60
 }
 else{
-  var speed = 30;   //60
+  var speed = 1;
 }
 
   function typeItOut () {
