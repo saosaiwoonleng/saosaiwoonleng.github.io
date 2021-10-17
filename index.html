@@ -55,9 +55,9 @@
     <link rel="stylesheet" href="Content/WordAnimation/movingletter.css">
     <script src="Content/WordAnimation/movingletter.min.js"></script>
 
-    <!-- ScrollReveal
+    <!-- AOS
     ================================================== -->
-    <script src="Content/ScrollReveal/scrollreveal.js"></script>
+    <link rel="stylesheet" href="Content/AOS/aos.css">
 
 </head>
 
@@ -158,7 +158,7 @@
     <!-- about
     ================================================== -->
     <section id="about" class="s-about target-section">
-        <div class="row section-intro has-bottom-sep">
+        <div class="row section-intro has-bottom-sep" data-aos="flip-up">
 
             <h3>About</h3>
             <h1 class="flickletter">More About Me</h1>
@@ -175,7 +175,7 @@
     <section id="skills" class="s-skills target-section">
         <div class="row skills-content">
 
-            <div class="col-six tab-full left">
+            <div class="col-six tab-full left" data-aos="slide-right">
                 <h1 data-chaffle="en">Technical Skills</h1><br />
                 <ul class="skill-bars">
                     <li>
@@ -206,7 +206,7 @@
                 </ul>
             </div>
 
-            <div class="col-six tab-full right">
+            <div class="col-six tab-full right" data-aos="slide-left">
                 <h1 data-chaffle="en">Professional Skills</h1><br />
 
                 <div class="chartcontainer">
@@ -263,9 +263,9 @@
     <section id="experiences" class="s-experiences target-section">
         <div class="row experiences-content experiences-content--timeline">
 
-            <div class="col-six tab-full left">
+            <div class="col-six tab-full left" data-aos="fade-left">
                 <h1 data-chaffle="en">Employment History</h1><br />
-                <div class="timeline" id="timeline_employment">
+                <div class="timeline">
 
                     <div class="timeline__block">
                         <div class="timeline__bullet"></div>
@@ -305,9 +305,9 @@
                 </div> <!-- end timeline -->
             </div> <!-- end left -->
 
-            <div class="col-six tab-full right">
+            <div class="col-six tab-full right" data-aos="fade-right">
                 <h1 data-chaffle="en">Educational History</h1><br />
-                <div class="timeline" id="timeline_education">
+                <div class="timeline">
 
                     <div class="timeline__block">
                         <div class="timeline__bullet"></div>
@@ -359,7 +359,7 @@
     <!-- projects
     ================================================== -->
     <section id="projects" class="s-works target-section">
-
+    <div data-aos="flip-down">
         <div class="row narrow section-intro has-bottom-sep">
             <div class="col-full">
                 <h3>Portfolio</h3>
@@ -369,16 +369,16 @@
             </div>
         </div>
 
-        <div style="text-align: center;" id="buttoncontainer">
+        <div style="text-align: center;">
             <button class="btn btn--primary filter-button" data-filter="all" id="defaultfilterbuttoncolor">All</button>
             <button class="btn btn--primary filter-button" data-filter="webapplication">Web Application</button>
             <button class="btn btn--primary filter-button" data-filter="electronicproject">Electronic Project</button>
             <button class="btn btn--primary filter-button" data-filter="gamingpc">Gaming PC</button>
             <button class="btn btn--primary filter-button" data-filter="mobileapplication">Mobile Application</button>
         </div>
-
+    </div>
         <div class="row masonry-wrap">
-            <div class="portfoliocontainer">
+            <div class="portfoliocontainer"  data-aos="zoom-in">
 
                 <div class="masonry__brick filter webapplication">
                     <div class="item-folio">
@@ -862,7 +862,7 @@
     </section> <!-- end projects -->
     <!-- testimonials
     ================================================== -->
-    <div class="s-testimonials">
+    <div class="s-testimonials" data-aos="slide-up">
 
         <div class="overlay"></div>
 
@@ -964,7 +964,7 @@
 
         <div class="overlay"></div>
 
-        <div class="row narrow section-intro">
+        <div class="row narrow section-intro" data-aos="flip-up">
             <div class="col-full">
                 <h3>Contact</h3>
                 <h1 class="movingletter11">
@@ -979,7 +979,7 @@
         </div>
 
         <div class="row contact__main">
-            <div class="col-eight tab-full contact__form">
+            <div class="col-eight tab-full contact__form" data-aos="slide-right">
                 <form name="contactForm" id="contactForm" method="POST" action="https://formspree.io/f/mvodoovb">
                     <fieldset>
 
@@ -1021,7 +1021,7 @@
                 </div>
 
             </div>
-            <div class="col-four tab-full contact__infos">
+            <div class="col-four tab-full contact__infos" data-aos="slide-left">
                 <h4 class="h06" data-chaffle="en" style="margin-top: 1.8rem;">Phone</h4>
                 <p>
                     Mobile: (+65) 8157 6144
@@ -1172,9 +1172,10 @@
     ================================================== -->
     <!-- <script src="Content/Hola/js/music.js"></script> -->
 
-    <!-- ScrollReveal
+        <!-- AOS
     ================================================== -->
-    <script src="Content/ScrollReveal/scrollreveal_body.js"></script>
+    <script src="Content/AOS/aos.js"></script>
+
 </body>
 
 </html>
