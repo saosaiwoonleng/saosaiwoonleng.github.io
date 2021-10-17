@@ -428,6 +428,6 @@
 
 
 
-var today = new Date();
-var thisyear = today.getFullYear();
-document.getElementById("copyrightdate").innerHTML = thisyear;
+// var today = new Date();
+// var thisyear = today.getFullYear();
+// document.getElementById("copyrightdate").innerHTML = thisyear;
