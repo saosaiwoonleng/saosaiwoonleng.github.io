@@ -31,7 +31,9 @@ Freelance Software Engineer, currently learning and developing algorithmic tradi
 Accomplished 6 Web Applications 💻 and 3 Electronic Projects 🤖 throughout my career 📈.
 `;
 
-if (/Windows|Mac|Linux/i.test(navigator.userAgent)) {
+var isTouchDevice = function() {  return 'ontouchstart' in window || 'onmsgesturechange' in window; };
+var isDesktop = window.screenX != 0 && !isTouchDevice() ? true : false;
+if (isDesktop) {
   var speed = 30;   //60
 }
 else{
