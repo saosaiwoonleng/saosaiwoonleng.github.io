@@ -26,9 +26,9 @@ jQuery(document).ready(function ($) {
 if (document.getElementsByClassName('demo').length > 0) {
   var i = 0;
     var txt = `
-Freelance Software Engineer, currently learning and developing algorithmic trading bot 🤖 and building Gaming PCs 🎮. 
+Software Engineer with two years of professional experience.
 
-Accomplished 6 Web Applications 💻 and 3 Electronic Projects 🤖 throughout my career 📈.
+Accomplished 6 Web Applications 💻, 4 Electronic Projects 🤖, 1 Projects ⚙️ throughout my career 📈.
 `;
 
 var isMobile = navigator.userAgent.match(/(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i);

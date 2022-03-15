@@ -120,9 +120,9 @@
                     <a href="#projects" class="smoothscroll btn btn--stroke">
                         Latest Projects
                     </a>
-                    <a href="Content/File/resume_reo.pdf" class="btn btn--stroke" download>
+                    <!-- <a href="Content/File/resume_reo.pdf" class="btn btn--stroke" download>
                         Download CV
-                    </a>
+                    </a> -->
                 </div>
 
                 <div class="home-content__scroll">
@@ -270,17 +270,35 @@
                     <div class="timeline__block">
                         <div class="timeline__bullet"></div>
                         <div class="timeline__header">
-                            <p class="timeline__timeframe">October 2020 - Present</p>
+                            <p class="timeline__timeframe">November 2021 - Present</p>
+                            <h3>Willowglen Services Pte Ltd</h3>
+                            <h5>Software Engineer</h5>
+                        </div>
+                        <div class="timeline__desc">
+                            <p>
+                                ⭐	Maintain and Support for the HR Portal web-application. (ASP.NET, MSSQL)
+                                ⭐	Designed and developed GPL (Graphical Programming Language) logic for Valve Type A, B, D Industrial Pressure Regulators.
+                                ⭐	Implemented security hardening, NTP (Network Time Protocol) and gateways for Workstations, Servers, Network Switches and Firewalls.
+                                ⭐	Implemented network redundancy protocol to the network switches for seamless failover and NCM (network configuration management) for monitoring of the network topology.
+                                ⭐	Maintenance of the VBA script to automate the calculation of multiple excel worksheets using Windows Scheduler.
+                                
+                            </p>
+                        </div>
+                    </div> <!-- end timeline__block -->
+
+                    <div class="timeline__block">
+                        <div class="timeline__bullet"></div>
+                        <div class="timeline__header">
+                            <p class="timeline__timeframe">October 2020 - August 2021</p>
                             <h3>Freelance</h3>
                             <h5>Software Engineer</h5>
                         </div>
                         <div class="timeline__desc">
                             <p>
-                                ⭐   Developing and enhancing E-Document and Project Module for the clients <br />
-                                ⭐   Enhancing the security and optimizing the performance of the existing projects.<br />
-                                ⭐   Fixing the bugs/errors from the deployed project before they become a bigger problem. <br />
-                                ⭐   Collaborating with colleagues to deliver the updates on time <br />
-                                ⭐   Learned to develop algorithmic trading bot in Python for Discord by using APIs <br />
+                                ⭐   Developed and enhanced E-Document and Project Module for the clients. <br />
+                                ⭐   Enhanced the security and optimizing the performance of the existing projects. <br />
+                                ⭐   Fixed the bugs/errors for the ongoing projects. <br />
+                                ⭐   Learned to develop algorithmic bot in Python by using third-party APIs. <br />
                                 ⭐   Wrote contents regarding PC, Tech, Video games and made PC build guide videos for Facebook/YouTube page. <br />
                             </p>
                         </div>
@@ -373,6 +391,7 @@
             <button class="btn btn--primary filter-button" data-filter="all" id="defaultfilterbuttoncolor">All</button>
             <button class="btn btn--primary filter-button" data-filter="webapplication">Web Application</button>
             <button class="btn btn--primary filter-button" data-filter="electronicproject">Electronic Project</button>
+            <button class="btn btn--primary filter-button" data-filter="project">Project</button>
             <button class="btn btn--primary filter-button" data-filter="gamingpc">Gaming PC</button>
             <button class="btn btn--primary filter-button" data-filter="mobileapplication">Mobile Application</button>
         </div>
@@ -380,11 +399,84 @@
         <div class="row masonry-wrap">
             <div class="portfoliocontainer"  data-aos="zoom-in">
 
+                <div class="masonry__brick filter electronicproject">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a href="Content/Hola/images/portfolio/gallery/RTU_GPL.JPG" class="thumb-link" title="GPL logic for Industrial Pressure Regulators" data-size="1050x700">
+                                <img src="Content/Hola/images/portfolio/RTU.jpg"
+                                     srcset="Content/Hola/images/portfolio/RTU.jpg 1x, Content/Hola/images/portfolio/RTU@2x.jpg 2x" alt="">
+                                <span class="shadow-overlay"></span>
+                            </a>
+                        </div>
+
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                GPL logic for Industrial Pressure Regulators
+                            </h3>
+                            <p class="item-folio__cat">
+                                Electronic Project
+                            </p>
+                        </div>
+
+                        <a href="" class="item-folio__project-link" title="Project link">
+                            <i class="im im-link"></i>
+                        </a>
+
+                        <div class="item-folio__caption">
+                            <p style="text-align:left">
+                                This project includes:-<br />
+                                GPL logic including (Ladder Diagram, Function Block, Structured Text)<br />
+                                RTDB (Real Time Database) for RTU (Remote Terminal Unit)                 
+                            </p>
+                        </div>
+
+                    </div> <!-- end item-folio -->
+                </div> <!-- end masonry__brick -->
+
+                <div class="masonry__brick filter project">
+                    <div class="item-folio">
+
+                        <div class="item-folio__thumb">
+                            <a href="Content/Hola/images/portfolio/gallery/Switches.JPG" class="thumb-link" title="Network Topology for Server and Switches" data-size="1050x700">
+                                <img src="Content/Hola/images/portfolio/Server.jpg"
+                                     srcset="Content/Hola/images/portfolio/Server.jpg 1x, Content/Hola/images/portfolio/Server@2x.jpg 2x" alt="">
+                                <span class="shadow-overlay"></span>
+                            </a>
+                        </div>
+
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                Network Topology for Server and Switches
+                            </h3>
+                            <p class="item-folio__cat">
+                                Project
+                            </p>
+                        </div>
+
+                        <a href="" class="item-folio__project-link" title="Project link">
+                            <i class="im im-link"></i>
+                        </a>
+
+                        <div class="item-folio__caption">
+                            <p style="text-align:left">
+                                This project includes:-<br />
+                                Implementing Security hardening for Workstations, Servers, Network Switches and Firewalls<br />
+                                Network Redundancy Protocol for Seamless Failover<br />
+                                NCM (Network Configuration Management) for monitoring of the network topology<br />
+                                NTP (Network Time Protocol) to synchronize the time for all devices from GPS Clock<br />
+                                Gateway and Route for connecting the devices from different IP subnets                       
+                            </p>
+                        </div>
+
+                    </div> <!-- end item-folio -->
+                </div> <!-- end masonry__brick -->
+
                 <div class="masonry__brick filter webapplication">
                     <div class="item-folio">
 
                         <div class="item-folio__thumb">
-                            <a href="Content/Hola/images/portfolio/gallery/ProjectReport.png" class="thumb-link" title="Service Request Web Application" data-size="1050x700">
+                            <a href="Content/Hola/images/portfolio/gallery/ProjectReport.png" class="thumb-link" title="Project Module" data-size="1050x700">
                                 <img src="Content/Hola/images/portfolio/ProjectVariation.png"
                                      srcset="Content/Hola/images/portfolio/ProjectVariation.png 1x, Content/Hola/images/portfolio/ProjectVariation@2x.png 2x" alt="">
                                 <span class="shadow-overlay"></span>
@@ -404,7 +496,7 @@
                             <i class="im im-link"></i>
                         </a>
 
-                        <div class="item-folio__caption">
+                        <div class="item-folio__caption">                         
                             <p style="text-align:left">
                                 This module includes:-<br />
                                 Database (MS SQL)<br />
@@ -420,7 +512,7 @@
                     <div class="item-folio">
 
                         <div class="item-folio__thumb">
-                            <a href="Content/Hola/images/portfolio/gallery/EDocumentSign.png" class="thumb-link" title="Service Request Web Application" data-size="1050x700">
+                            <a href="Content/Hola/images/portfolio/gallery/EDocumentSign.png" class="thumb-link" title="E-Document Module" data-size="1050x700">
                                 <img src="Content/Hola/images/portfolio/EDocument.png"
                                      srcset="Content/Hola/images/portfolio/EDocument.png 1x, Content/Hola/images/portfolio/EDocument@2x.png 2x" alt="">
                                 <span class="shadow-overlay"></span>
@@ -877,6 +969,17 @@
             <div class="col-full testimonials__slider">
 
                 <div class="testimonials__slide">
+                    <img src="Content/Hola/images/avatars/user-08.jpeg" alt="Author image" class="testimonials__avatar">
+                    <p>
+                        People don't really believe in words. Or rather, people believe in words only for a stretch of time. Then they start to look for action.
+                    </p>
+                    <div class="testimonials__author h06">
+                        Volodymyr Zelensky
+                        <span>President of Ukraine</span>
+                    </div>
+                </div>
+
+                <div class="testimonials__slide">
                     <img src="Content/Hola/images/avatars/user-01.png" alt="Author image" class="testimonials__avatar">
                     <p>
                         If something's important enough, you should try. Even if the probable outcome is failure.
@@ -1091,7 +1194,7 @@
 
             <div class="col-twelve">
                 <div class="copyright">
-                    <span>©2021 by Sao Sai Woon Leng (Reo)</span>
+                    <span>©2022 by Sao Sai Woon Leng (Reo)</span>
                         <!-- <span id="copyrightdate"></span> -->
                     <span>Developed by Sao Sai Woon Leng (Reo)</span>
                 </div>
