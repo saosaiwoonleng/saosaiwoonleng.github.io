@@ -28,7 +28,7 @@ if (document.getElementsByClassName('demo').length > 0) {
     var txt = `
 Software Engineer with two years of professional experience.
 
-Accomplished 6 Web Applications 💻, 4 Electronic Projects 🤖, 1 Projects ⚙️ throughout my career 📈.
+Accomplished 2 Windows Apps 🖥️, 6 Web Apps 💻, 4 Electronic Projects 🤖, 1 Projects ⚙️ throughout my career 📈.
 `;
 
 var isMobile = navigator.userAgent.match(/(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i);
