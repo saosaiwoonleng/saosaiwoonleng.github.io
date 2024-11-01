@@ -9,7 +9,7 @@
             "name": "Launch Edge",
             "request": "launch",
             "type": "pwa-msedge",
-            "url": "file:///C:/Users/Reo/source/repos/saosaiwoonleng.github.io/saosaiwoonleng.github.io/index.html",
+            "url": "file:///C:/Users/sao.sai/source/repos/Portfolio/saosaiwoonleng.github.io/index.html",
             "webRoot": "${workspaceFolder}"
         },
         
