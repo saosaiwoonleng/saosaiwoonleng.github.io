@@ -9,6 +9,21 @@ var getAll = function (selector, scope) {
   return scope.querySelectorAll(selector);
 };
 
+// Function to calculate the number of years from 1 Jul 2020 to the current date
+function calculateYearsFromJuly2020() {
+  const startDate = new Date('2020-07-01'); // Start date: 1 Jul 2020
+  const currentDate = new Date(); // Current date and time
+
+  // Calculate the difference in milliseconds
+  const diffInMilliseconds = currentDate - startDate;
+
+  // Convert the difference in milliseconds to years
+  const diffInYears = diffInMilliseconds / (1000 * 60 * 60 * 24 * 365.25); // 365.25 to account for leap years
+
+  // Output the number of years
+  return Math.floor(diffInYears); // Rounds the result to 2 decimal places
+}
+
 jQuery(document).ready(function ($) {
 
     $triggered_times = 0;
@@ -20,13 +35,11 @@ jQuery(document).ready(function ($) {
 
         if (y_scroll_pos > scroll_pos_test && $triggered_times == 0) {
 
-
-
 // setup typewriter effect in the terminal demo
 if (document.getElementsByClassName('demo').length > 0) {
   var i = 0;
     var txt = `
-Software Engineer with two years of professional experience.
+Software Engineer with ` + calculateYearsFromJuly2020() + ` years of professional experience.
 
 Accomplished 2 Windows Apps 🖥️, 6 Web Apps 💻, 4 Electronic Projects 🤖, 1 Projects ⚙️ throughout my career 📈.
 `;
