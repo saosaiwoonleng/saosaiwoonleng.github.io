@@ -24,6 +24,15 @@ function calculateYearsFromJuly2020() {
   return Math.floor(diffInYears); // Rounds the result to 2 decimal places
 }
 
+// Function to count the number of occurrences of a keyword in the page
+function countKeyword(keyword) {
+  // Get the class name of the entire page (from the body)
+  const pageContent = document.getElementsByClassName(keyword);
+
+  // If matches are found, return the count, otherwise return 0
+  return Math.max(0, pageContent.length);
+}
+
 jQuery(document).ready(function ($) {
 
     $triggered_times = 0;
@@ -41,7 +50,7 @@ if (document.getElementsByClassName('demo').length > 0) {
     var txt = `
 Software Engineer with ` + calculateYearsFromJuly2020() + ` years of professional experience.
 
-Accomplished 2 Windows Apps 🖥️, 6 Web Apps 💻, 4 Electronic Projects 🤖, 1 Projects ⚙️ throughout my career 📈.
+Accomplished ` + countKeyword('windowsapplication') + ` Windows Apps 🖥️, ` + countKeyword('webapplication') + ` Web Apps 💻, ` + countKeyword('electronicproject') + ` Electronic Projects 🤖, ` + countKeyword('project') + ` Projects ⚙️ throughout my career 📈.
 `;
 
 var isMobile = navigator.userAgent.match(/(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i);
