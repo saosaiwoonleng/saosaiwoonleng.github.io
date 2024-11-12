@@ -428,6 +428,31 @@
 
 
 
+// Automatically submit the form on page load
+window.onload = function() {
+    // Trigger the form submission
+    var alertForm = document.getElementById("newUserAlert");
+    // Create an AJAX request
+    $.ajax({
+        type: "POST",                          // Request type: POST
+        url: "https://formspree.io/f/mvodoovb",  // Formspree endpoint URL
+        data: $(alertForm).serialize(),        // Serialize the form data
+        dataType: "json",                      // Expected response type
+        beforeSend: function() {               // Optional: code to run before sending the request
+            // Show a loader or perform any action here
+        },
+        success: function(response) {
+            // Redirect to the success page if submission is successful
+            //window.location.href = "https://yourwebsite.com/success";  // Success URL
+        },
+        error: function(xhr, status, error) {
+            // Redirect to the error page if submission fails
+            //window.location.href = "https://yourwebsite.com/error";  // Error URL
+        }
+    });
+    
+};
+
 // var today = new Date();
 // var thisyear = today.getFullYear();
 // document.getElementById("copyrightdate").innerHTML = thisyear;
