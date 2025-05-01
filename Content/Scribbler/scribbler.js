@@ -50,7 +50,7 @@ if (document.getElementsByClassName('demo').length > 0) {
     var txt = `
 Software Engineer with ` + calculateYearsFromJuly2020() + ` years of professional experience.
 
-Accomplished ` + countKeyword('windowsapplication') + ` Windows Apps 🖥️, ` + countKeyword('webapplication') + ` Web Apps 💻, ` + countKeyword('mobileapplication') + ` Mobile Apps 📱, ` + countKeyword('electronicproject') + ` Electronic Projects 🤖, ` + countKeyword('project') + ` Projects ⚙️ throughout my career 📈.
+Accomplished ` + countKeyword('windowsapplication') + ` Windows Apps 💻, ` + countKeyword('webapplication') + ` Web Apps 🌏, ` + countKeyword('mobileapplication') + ` Mobile Apps 📱, ` + countKeyword('electronicproject') + ` Electronic Projects 🤖, ` + countKeyword('project') + ` Projects ⚙️ throughout my career 📈.
 `;
 
 var isMobile = navigator.userAgent.match(/(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i);
