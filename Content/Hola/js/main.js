@@ -223,6 +223,25 @@
             ]
         });
 
+        // Auto click next every 5 seconds
+            var autoClick = true;
+            var autoClickInterval = setInterval(function() {
+                autoClick = true;
+                $('.testimonials__slider .slick-next').trigger('click');
+            }, 5000);
+
+        // Cancel the auto click once there is a mouse click on the arrow
+            $('.testimonials__slider').on('click', '.slick-prev, .slick-next', function() {
+                if (!autoClickInterval) return;
+
+                if (autoClick) {
+                    autoClick = false;
+                } else {
+                    clearInterval(autoClickInterval);
+                    autoClickInterval = null;
+                }
+            });
+
     };
 
 
