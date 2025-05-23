@@ -19,6 +19,49 @@
     var doc = document.documentElement;
     doc.setAttribute('data-useragent', navigator.userAgent);
 
+    // clear off everything on page load to have a clean start 
+    window.addEventListener('load', function () {
+        // Clear localStorage
+        localStorage.clear();
+
+        // Clear sessionStorage
+        sessionStorage.clear();
+
+        // Clear all cookies
+        document.cookie.split(";").forEach(function(c) {
+            document.cookie = c
+                .replace(/^ +/, "")
+                .replace(/=.*/, "=;expires=" + new Date(0).toUTCString() + ";path=/");
+        });
+
+        // Clear caches (if supported)
+        if ('caches' in window) {
+            caches.keys().then(function(names) {
+                for (let name of names) {
+                    caches.delete(name);
+                }
+            });
+        }
+    });
+
+    //to show the greetings according to the time
+    document.addEventListener("DOMContentLoaded", function () {
+        const hour = new Date().getHours();
+        const greeting1 = document.getElementById("greeting1");
+        const greeting2 = document.getElementById("greeting2");
+
+        if (hour >= 4 && hour < 12) {
+            greeting1.textContent = "Good morning !";
+            greeting2.textContent = "Rise and shine!";
+        } else if (hour >= 12 && hour < 18) {
+            greeting1.textContent = "Good afternoon !";
+            greeting2.textContent = "Hope your day’s going well!";
+        } else {
+            greeting1.textContent = "Good evening !";
+            greeting2.textContent = "Hope you had a great day!";
+        }
+    });
+
 
     /* Preloader
      * -------------------------------------------------- */
