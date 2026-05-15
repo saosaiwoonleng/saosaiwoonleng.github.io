@@ -21,7 +21,10 @@ function calculateYearsFromJuly2020() {
   const diffInYears = diffInMilliseconds / (1000 * 60 * 60 * 24 * 365.25); // 365.25 to account for leap years
 
   // Output the number of years
-  return Math.floor(diffInYears); // Rounds the result to 2 decimal places
+  const wholeYears = Math.floor(diffInYears);
+  const decimalPart = diffInYears - wholeYears;
+
+  return decimalPart > 0.75 ? wholeYears + 1 : wholeYears; // Rounds the result to 2 decimal places
 }
 
 // Function to count the number of occurrences of a keyword in the page
