@@ -12,12 +12,29 @@ const htmlFiles = fs
 
 const ATTR_PATTERN = /\b(?:href|src)\s*=\s*["']([^"']+)["']/g;
 
+// Strips HTML comments via a single linear scan (no regex backtracking over
+// the whole file) so disabled/commented-out references aren't reported as broken.
+function stripHtmlComments(html) {
+  let result = "";
+  let i = 0;
+  while (i < html.length) {
+    const start = html.indexOf("<!--", i);
+    if (start === -1) {
+      result += html.slice(i);
+      break;
+    }
+    result += html.slice(i, start);
+    const end = html.indexOf("-->", start + 4);
+    if (end === -1) break;
+    i = end + 3;
+  }
+  return result;
+}
+
 let missing = [];
 
 for (const file of htmlFiles) {
-  const html = fs
-    .readFileSync(path.join(repoRoot, file), "utf8")
-    .replace(/<!--[\s\S]*?-->/g, "");
+  const html = stripHtmlComments(fs.readFileSync(path.join(repoRoot, file), "utf8"));
   let match;
   while ((match = ATTR_PATTERN.exec(html))) {
     const ref = match[1];
