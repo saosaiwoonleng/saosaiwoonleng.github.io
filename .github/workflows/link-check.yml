@@ -18,5 +18,8 @@ jobs:
         with:
           args: >-
             --no-progress
+            --root-dir .
+            --exclude '^https://formspree\.io/'
+            --exclude '^https://(www\.)?reddit\.com/'
             index.html 404.html
           fail: true
