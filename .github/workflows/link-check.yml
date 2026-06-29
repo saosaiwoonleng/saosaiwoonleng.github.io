@@ -18,6 +18,5 @@ jobs:
         with:
           args: >-
             --no-progress
-            --exclude-mail
             index.html 404.html
           fail: true
