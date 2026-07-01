@@ -19,11 +19,24 @@ if (files.length === 0) {
 const ATTR_RE = /\b(?:href|src)\s*=\s*"([^"]+)"|\b(?:href|src)\s*=\s*'([^']+)'/g;
 const IGNORE_RE = /^(https?:)?\/\/|^mailto:|^tel:|^javascript:|^data:|^#/i;
 
+// Strip HTML comments to a fixed point so that removing one comment can
+// never expose a "<!--"/"-->" pair that was previously split across two
+// separate comments.
+function stripComments(html) {
+  let previous;
+  let cleaned = html;
+  do {
+    previous = cleaned;
+    cleaned = cleaned.replace(/<!--[\s\S]*?-->/g, "");
+  } while (cleaned !== previous);
+  return cleaned;
+}
+
 let errorCount = 0;
 
 for (const file of files) {
   const absFile = path.resolve(repoRoot, file);
-  const html = fs.readFileSync(absFile, "utf8").replace(/<!--[\s\S]*?-->/g, "");
+  const html = stripComments(fs.readFileSync(absFile, "utf8"));
   const baseDir = path.dirname(absFile);
 
   let match;
