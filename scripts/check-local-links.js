@@ -21,7 +21,12 @@ let missing = [];
 
 for (const file of HTML_FILES) {
   const fullPath = path.join(ROOT, file);
-  const html = fs.readFileSync(fullPath, 'utf8').replace(/<!--[\s\S]*?-->/g, '');
+  let html = fs.readFileSync(fullPath, 'utf8');
+  let previous;
+  do {
+    previous = html;
+    html = html.replace(/<!--[\s\S]*?-->/g, '');
+  } while (html !== previous);
   let match;
   while ((match = ATTR_PATTERN.exec(html)) !== null) {
     const ref = match[1];
