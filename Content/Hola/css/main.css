@@ -1767,7 +1767,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     position: relative;
 }
 
-.home-content h3 {
+.home-content .hero-greeting {
     font-family: "montserrat-bold", sans-serif;
     font-size: 3.5rem;
     color: #2e5cff;
@@ -1779,7 +1779,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     margin-bottom: .6rem;
 }
 
-.home-content h3::before {
+.home-content .hero-greeting::before {
     display: block;
     content: "";
     width: 60px;
@@ -2109,12 +2109,12 @@ html.no-csstransitions .home-content__main {
 }
 
 @media only screen and (max-width: 800px) {
-    .home-content h3 {
+    .home-content .hero-greeting {
         font-size: 2.2rem;
         padding-left: 50px;
         margin-left: -10px;
     }
-    .home-content h3::before {
+    .home-content .hero-greeting::before {
         width: 40px;
     }
     .home-content h1 {
@@ -2151,7 +2151,7 @@ html.no-csstransitions .home-content__main {
     .s-home {
         min-height: 654px;
     }
-    .home-content h3 {
+    .home-content .hero-greeting {
         font-size: 2.2rem;
     }
     .home-content h1 {
