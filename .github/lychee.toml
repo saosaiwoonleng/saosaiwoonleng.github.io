@@ -1,0 +1,8 @@
+# Config for the link-check workflow (.github/workflows/link-check.yml).
+# These paths are referenced only inside commented-out (disabled) markup in
+# index.html and intentionally do not exist yet.
+exclude = [
+  "^index2\\.html$",
+  "Content/File/resume_reo\\.pdf$",
+  "Content/Hola/js/music\\.js$",
+]

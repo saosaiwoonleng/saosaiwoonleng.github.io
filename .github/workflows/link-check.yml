@@ -1,0 +1,28 @@
+name: Link Check
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "**/*.html"
+  pull_request:
+    branches: [main]
+    paths:
+      - "**/*.html"
+
+jobs:
+  lychee:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check for broken local links, images and scripts
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: >-
+            --no-progress
+            --offline
+            --exclude-mail
+            --config .github/lychee.toml
+            "*.html"
+          fail: true
