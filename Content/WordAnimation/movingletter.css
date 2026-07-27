@@ -1,3 +1,7 @@
+  .movingletter2 {
+    display: block;
+  }
+
   .movingletter2 .letter {
     line-height: 1em;
   }

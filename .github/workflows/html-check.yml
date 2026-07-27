@@ -1,0 +1,29 @@
+name: HTML Validation
+
+on:
+  push:
+    paths:
+      - "**.html"
+  pull_request:
+    paths:
+      - "**.html"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install html5validator
+        run: pip install html5validator
+
+      - name: Validate HTML
+        run: >
+          html5validator --root . --match "*.html" --ignore-re "Content/"
+          --ignore "Element \"ul\" not allowed as child of element \"span\""
