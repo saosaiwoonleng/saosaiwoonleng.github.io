@@ -1,1 +1,5 @@
 .vscode/launch.json
+
+# Local server automation (this box only, not site source)
+.claude-maintenance-prompt.md
+.claude-maintenance-log/
