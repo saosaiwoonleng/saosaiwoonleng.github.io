@@ -20,7 +20,7 @@ There is no backend, database, or build step — `index.html`/`404.html` link di
 
 - **Hosting:** [GitHub Pages](https://pages.github.com/), served from the `main` branch of this repository (a `<username>.github.io` user site).
 - **Static site generator:** [Jekyll](https://jekyllrb.com/), via GitHub Pages, using the `jekyll-theme-midnight` theme (see `_config.yml`). Jekyll only wraps `index.html`/`404.html` as-is — there is no Liquid templating or Markdown content in use.
-- **Markup/styling:** plain HTML5 + CSS3, [Bootstrap 4.6](https://getbootstrap.com/docs/4.6/) (vendored under `Content/`, used by both `index.html` and `404.html`), custom CSS in `Content/Site.css`, `Content/Scribbler`, `Content/WordAnimation`, and `Content/Charts`.
+- **Markup/styling:** plain HTML5 + CSS3, [Bootstrap 4.6](https://getbootstrap.com/docs/4.6/) (CSS only, vendored as `Content/bootstrap.min.css` and used by `404.html`; `index.html` is styled by the Hola template CSS instead), custom CSS in `Content/Site.css`, `Content/Scribbler`, `Content/WordAnimation`, and `Content/Charts`.
 - **Scripting:** [jQuery 3.7.1](https://jquery.com/), plus small vendored plugins (Modernizr, Pace.js, AOS scroll animations, Chaffle/MovingLetter text effects, a custom Scribbler script) under `Content/`.
 - **Forms:** [Formspree](https://formspree.io/) (third-party form backend, no server code in this repo).
 - **No package manager / no dependency lock file** — all third-party assets are committed directly as static files rather than installed via npm/yarn.
@@ -40,7 +40,7 @@ There is no backend, database, or build step — `index.html`/`404.html` link di
 │   ├── WordAnimation/          # Text animation (Chaffle/Moving Letter) library
 │   ├── Scribbler/              # Scribbler project styles/script
 │   ├── Charts/                 # Charts section styles
-│   └── bootstrap*.css/.js      # Vendored Bootstrap 4.6 assets
+│   └── bootstrap.min.css       # Vendored Bootstrap 4.6 CSS (used by 404.html)
 └── docs/maintenance-report/    # Dated maintenance/audit reports
 ```
 
