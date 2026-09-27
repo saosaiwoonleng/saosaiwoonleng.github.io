@@ -79,12 +79,14 @@ There is no build step, bundler, linter, or type-check step configured for this 
 
 ## CI/CD Documentation
 
-Two GitHub Actions workflows run on every push/PR touching `main`:
+Two GitHub Actions workflows are defined:
 
-- **`.github/workflows/html-check.yml`** — validates `index.html` and `404.html` with [html5validator](https://github.com/svenkreiss/html5validator) to catch malformed markup before it ships.
-- **`.github/workflows/link-check.yml`** — crawls `index.html` and `404.html` and fails if any internal or external link/asset is broken.
+- **`.github/workflows/html-check.yml`** — validates `index.html` and `404.html` with [html5validator](https://github.com/svenkreiss/html5validator) to catch malformed markup before it ships. Runs on pushes and PRs (any branch) that change a `.html` file; commits that touch only other files (e.g. Markdown) don't trigger it.
+- **`.github/workflows/link-check.yml`** — crawls `index.html` and `404.html` and fails if any internal or external link/asset is broken. Runs on every push and PR to `main`.
 
-Both are required checks intended to catch regressions before they reach production. There is no separate build or deploy workflow — GitHub Pages handles that automatically (see below).
+GitHub's default CodeQL code-scanning setup also runs on pushes to `main` and on a weekly schedule (configured in the repository settings, not as a workflow file).
+
+These checks are there to catch regressions before they reach production, but `main` has no branch protection, so a failing check does not block a push or merge. Check that the runs are green after pushing. There is no separate build or deploy workflow — GitHub Pages handles that automatically (see below).
 
 ## Deployment Documentation
 
