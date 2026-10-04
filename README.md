@@ -77,6 +77,16 @@ No environment variables or secrets are required to run or build this site.
 
 There is no build step, bundler, linter, or type-check step configured for this project — it is plain static HTML/CSS/JS. Changes can be verified by opening the page in a browser and checking the affected section manually across desktop and mobile viewport widths. The only automated checks are the two CI workflows described below.
 
+To run the same checks locally before pushing (from the repository root), install [html5validator](https://github.com/svenkreiss/html5validator) (`pip install html5validator`, which also needs a Java runtime on `PATH`; Java 17 is known to work) and [lychee](https://github.com/lycheeverse/lychee#installation), then run:
+
+```
+html5validator --root . --match "*.html" --ignore-re "Content/" --ignore "Element \"ul\" not allowed as child of element \"span\""
+
+lychee --no-progress --root-dir . --exclude '^https://formspree\.io/' --exclude '^https://(www\.)?reddit\.com/' index.html 404.html
+```
+
+Both commands exit 0 when everything passes. They mirror the `run`/`args` settings in `.github/workflows/html-check.yml` and `.github/workflows/link-check.yml`, so update them here if the workflows change.
+
 ## CI/CD Documentation
 
 Two GitHub Actions workflows are defined:
