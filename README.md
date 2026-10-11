@@ -94,6 +94,8 @@ Two GitHub Actions workflows are defined:
 - **`.github/workflows/html-check.yml`** — validates `index.html` and `404.html` with [html5validator](https://github.com/svenkreiss/html5validator) to catch malformed markup before it ships. Runs on pushes and PRs (any branch) that change a `.html` file; commits that touch only other files (e.g. Markdown) don't trigger it.
 - **`.github/workflows/link-check.yml`** — crawls `index.html` and `404.html` and fails if any internal or external link/asset is broken. Runs on every push and PR to `main`.
 
+Both workflows run on `ubuntu-latest`. They pin GitHub's official actions to their Node 24 majors (`actions/checkout@v6`, `actions/setup-python@v6`) and use `lycheeverse/lychee-action@v2` (a composite action, no Node runtime). When GitHub deprecates a runtime or runner image, the run's annotations say so — bump the pins then.
+
 GitHub's default CodeQL code-scanning setup also runs on pushes to `main` and on a weekly schedule (configured in the repository settings, not as a workflow file).
 
 These checks are there to catch regressions before they reach production, but `main` has no branch protection, so a failing check does not block a push or merge. Check that the runs are green after pushing. There is no separate build or deploy workflow — GitHub Pages handles that automatically (see below).
