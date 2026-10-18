@@ -34,6 +34,7 @@ There is no backend, database, or build step — `index.html`/`404.html` link di
 ├── _config.yml                 # Jekyll theme configuration for GitHub Pages
 ├── favicon.ico
 ├── .gitattributes / .gitignore
+├── .github/workflows/          # CI: html-check.yml (HTML validation), link-check.yml (link/asset check)
 ├── Content/                    # All static assets referenced by index.html/404.html
 │   ├── Hola/                   # Base template assets (css/js/fonts/images)
 │   ├── AOS/                    # Scroll animation library
