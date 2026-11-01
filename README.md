@@ -78,7 +78,7 @@ No environment variables or secrets are required to run or build this site.
 
 There is no build step, bundler, linter, or type-check step configured for this project — it is plain static HTML/CSS/JS. Changes can be verified by opening the page in a browser and checking the affected section manually across desktop and mobile viewport widths. The only automated checks are the two CI workflows described below.
 
-To run the same checks locally before pushing (from the repository root), install [html5validator](https://github.com/svenkreiss/html5validator) (`pip install html5validator`, which also needs a Java runtime on `PATH`; Java 17 is known to work) and [lychee](https://github.com/lycheeverse/lychee#installation), then run:
+To run the same checks locally before pushing (from the repository root), install [html5validator](https://github.com/svenkreiss/html5validator) (`pip install html5validator`, which also needs a Java runtime on `PATH`; Java 17 and 25 are known to work) and [lychee](https://github.com/lycheeverse/lychee#installation), then run:
 
 ```
 html5validator --root . --match "*.html" --ignore-re "Content/" --ignore "Element \"ul\" not allowed as child of element \"span\""
